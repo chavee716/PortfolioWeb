@@ -249,7 +249,7 @@ export default function Contact({ isDarkMode }) {
               
               {submitStatus === 'success' && (
                 <div className="p-3 bg-green-800 text-green-100 rounded">
-                  Your message has been sent successfully. I'll get back to you soon!
+                  Your message has been sent successfully. I&apos;ll get back to you soon!
                 </div>
               )}
               
@@ -258,7 +258,7 @@ export default function Contact({ isDarkMode }) {
                   {errorMessage || 'Something went wrong. Please try again later.'}
                 </div>
               )}
-</form>
+            </form>
           </div>
         </div>
       </main>

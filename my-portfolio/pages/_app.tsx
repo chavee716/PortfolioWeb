@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import type { AppProps } from "next/app";
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
+import Link from "next/link";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import "../styles/globals.css";
 
@@ -72,11 +73,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <a href="/">
+              <Link href="/">
                 <span className={`text-2xl font-bold ${isDarkMode ? "text-blue-400" : "text-blue-600"}`}>
                   Chaveen Dias
                 </span>
-              </a>
+              </Link>
             </div>
             
             {/* Desktop Nav */}
@@ -84,12 +85,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
               <ul className="flex space-x-8">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <a href={link.href}>
+                    <Link href={link.href}>
                       <span className={`font-medium hover:text-blue-400 transition-colors relative group px-1 py-2`}>
                         {link.label}
                         <span className={`absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full`}></span>
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -123,7 +124,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             <ul className="px-4 pt-2 pb-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href}>
+                  <Link href={link.href}>
                     <span 
                       className={`block py-3 px-4 rounded-lg text-center font-medium ${isDarkMode 
                         ? "hover:bg-gray-700 hover:text-blue-400" 
@@ -132,7 +133,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                     >
                       {link.label}
                     </span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
