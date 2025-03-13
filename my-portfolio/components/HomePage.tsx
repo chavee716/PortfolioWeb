@@ -6,7 +6,12 @@ import About from '../pages/about';
 import Projects from '../pages/projects';
 import Contact from '../pages/contact';
 
-export default function HomePage({ isDarkMode }) {
+// Define the props interface for the HomePage component
+interface HomePageProps {
+  isDarkMode: boolean;
+}
+
+export default function HomePage({ isDarkMode }: HomePageProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [text, setText] = useState('');
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
