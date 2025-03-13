@@ -1,12 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown, ArrowRight, ExternalLink, Github, Linkedin } from 'lucide-react';
 import About from '../pages/about';
 import Projects from '../pages/projects';
 import Contact from '../pages/contact';
-import dp from '../public/dp.jpg';
 
 export default function HomePage({ isDarkMode }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,12 +13,12 @@ export default function HomePage({ isDarkMode }) {
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
   
-  // Array of sentences for typing animation
-  const sentences = [
+  // Array of sentences for typing animation - wrapped in useMemo
+  const sentences = useMemo(() => [
     "Passionate about DevOps and Machine Learning.",
     "AI Enthusiast.",
     "Learning and growing as a software engineer."
-  ];
+  ], []);
 
   useEffect(() => {
     setIsVisible(true);
@@ -80,10 +78,10 @@ export default function HomePage({ isDarkMode }) {
           <div className="mb-8">
             <span className={`inline-block px-4 py-2 rounded-full text-sm font-medium mb-4 ${
               isDarkMode ? 'bg-blue-900/30 text-blue-400' : 'bg-blue-100 text-blue-600'}`}>
-              Computer Engineering Undergraduate
+              BSc. Computer Engineering Undergraduate
             </span>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Hi, I'm <span className={`${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>Chaveen Dias</span>
+              Hi, I&apos;m <span className={`${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>Chaveen Dias</span>
             </h1>
             <div className={`max-w-2xl mx-auto text-lg md:text-xl mb-10 min-h-[60px] ${
               isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>

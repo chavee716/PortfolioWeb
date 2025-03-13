@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
+// Removed unused Link import
 import { useState } from 'react';
-import { ExternalLink, Github, Calendar, Layers } from 'lucide-react';
+import { ExternalLink, Github, Calendar } from 'lucide-react'; // Removed unused Layers import
 
 export default function Projects({ isDarkMode }) {
   const [filter, setFilter] = useState('all');
@@ -119,7 +119,7 @@ export default function Projects({ isDarkMode }) {
           My Projects
         </h2>
         <p className={`text-center max-w-3xl mx-auto mb-10 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-          Here are some of the projects I've worked on. Each one has helped me develop different skills and tackle unique challenges.
+          Here are some of the projects I&apos;ve worked on. Each one has helped me develop different skills and tackle unique challenges.
         </p>
         
         {/* Filter buttons */}
