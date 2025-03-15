@@ -1,7 +1,6 @@
 import Head from 'next/head';
-// Removed unused Link import
 import { useState } from 'react';
-import { ExternalLink, Github, Calendar } from 'lucide-react'; // Removed unused Layers import
+import { ExternalLink, Github, Calendar } from 'lucide-react';// Removed unused Layers import
 
 export default function Projects({ isDarkMode }) {
   const [filter, setFilter] = useState('all');

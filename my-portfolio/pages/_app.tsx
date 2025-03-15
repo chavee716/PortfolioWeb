@@ -5,7 +5,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import "../styles/globals.css";
-import React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
