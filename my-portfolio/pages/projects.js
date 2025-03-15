@@ -1,17 +1,37 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import { ExternalLink, Github, Calendar } from 'lucide-react';// Removed unused Layers import
+import { ExternalLink, Github, Calendar } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Projects({ isDarkMode }) {
   const [filter, setFilter] = useState('all');
   
   const projects = [
     {
+      title: "My Portfolio Website",
+      period: "2025 Feb - 2025 March",
+      type: "Web Development",
+      category: "web",
+      description: "A personal portfolio website built with Next.js to showcase my projects, skills, and experience.",
+      image: "/images/portfolio-website.png",
+      technologies: ["Next.js", "React", "Tailwind CSS", "JavaScript", "Responsive Design", "Git", "GitHub", "Render.com"],
+      keyPoints: [
+        "Designed and developed a responsive portfolio website that can be accessed from any device.",
+        "Implemented light and dark mode for better user experience and accessibility.",
+        "Deployed the website on Render.com for reliable hosting."
+      ],
+      links: {
+        github: "https://github.com/chavee716/PortfolioWeb",
+        demo: null
+      }
+    },
+    {
       title: "EV Charging Booking System",
       period: "2024 - PRESENT",
       type: "Software Project",
       category: "mobile",
       description: "The EV Charging and Booking System allows users to see the available charging stations near their live location and book a slot based on availability.",
+      image: "/images/ev-charging-app.png",
       technologies: ["React", "Tailwind CSS", "React Native", "Node.js", "MongoDB", "Google Maps API", "Git", "GitHub", "JIRA"],
       keyPoints: [
         "Used JWT authentication and role-based access control (RBAC) to secure user data and admin functionalities.",
@@ -28,6 +48,7 @@ export default function Projects({ isDarkMode }) {
       type: "DevOps/Web Application",
       category: "devops",
       description: "DevOps pipeline implementation for a To Do List web application.",
+      image: "/images/todo-list-app.png",
       technologies: ["GitHub Actions", "YAML", "Docker", "Docker Hub", "Git", "GitHub", "Node.js", "Express.js", "React.js", "AWS EC2", "Docker Compose"],
       keyPoints: [
         "Built a CI/CD pipeline using GitHub Actions to automate the process of building Docker images for frontend and backend services.",
@@ -45,6 +66,7 @@ export default function Projects({ isDarkMode }) {
       type: "Web Application",
       category: "web",
       description: "Developed a web application using the MERN stack to manage hotel bookings, rooms, and user details.",
+      image: "/images/hotel-booking-system.png",
       technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT Authentication", "Git", "GitHub", "JIRA", "GitHub Actions"],
       keyPoints: [
         "This system allows users to perform CRUD operations for managing hotel bookings, rooms, and user details.",
@@ -62,6 +84,7 @@ export default function Projects({ isDarkMode }) {
       type: "Machine Learning",
       category: "ml",
       description: "Developed a machine learning model to classify mushrooms as poisonous or edible based on their characteristics.",
+      image: "/images/mushroom-classification.png",
       technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn", "Google Colab"],
       keyPoints: [
         "Used a Decision Tree algorithm, achieving 99.63% accuracy and 99.49% precision on the dataset.",
@@ -80,6 +103,7 @@ export default function Projects({ isDarkMode }) {
       type: "MySQL Application",
       category: "database",
       description: "A database application for managing car rentals.",
+      image: "/images/car-rental-system.png",
       technologies: ["MySQL", "Visual Paradigm"],
       keyPoints: [
         "Created a 2NF schema to ensure consistent, non-redundant data.",
@@ -151,6 +175,22 @@ export default function Projects({ isDarkMode }) {
                 isDarkMode ? 'bg-gray-900' : 'bg-white'
               }`}
             >
+              {/* Project Image */}
+              <div className="relative w-full h-48 overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  width={800}
+                  height={400}
+                  style={{
+                    objectFit: 'cover',
+                    width: '100%',
+                    height: '100%'
+                  }}
+                  className="transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className={`text-2xl font-bold ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
@@ -208,7 +248,7 @@ export default function Projects({ isDarkMode }) {
                 </div>
                 
                 <div className="flex space-x-3">
-                  {project.links.github && (
+                  {project.links.github && project.links.github !== "#" && (
                     <a 
                       href={project.links.github} 
                       target="_blank" 
