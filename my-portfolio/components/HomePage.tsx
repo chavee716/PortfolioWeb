@@ -178,7 +178,7 @@ export default function HomePage({ isDarkMode }: HomePageProps) {
           </h2>
           <div className={`text-center p-10 rounded-xl ${
             isDarkMode ? 'bg-gray-800' : 'bg-white shadow-lg'}`}>
-            <p className="mb-6">Resume content will go here</p>
+            <p className="mb-6"></p>
             <a 
               href="/ChaveenDiasCVResume.pdf" 
               className={`inline-flex items-center px-5 py-3 rounded-lg ${
