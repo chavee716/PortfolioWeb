@@ -21,7 +21,7 @@ export default function Projects({ isDarkMode }) {
         "Deployed the website on Render.com for reliable hosting."
       ],
       links: {
-        github: "https://github.com/chavee716/PortfolioWeb",
+        github: null,
         demo: null
       }
     },
