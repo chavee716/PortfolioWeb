@@ -16,6 +16,8 @@ export default function Projects({ isDarkMode }) {
       image: "/images/portfolio-website.png",
       technologies: ["Next.js", "React", "Tailwind CSS", "JavaScript", "Responsive Design", "Git", "GitHub", "Render.com"],
       keyPoints: [
+        "A personal portfolio website of myself built with Next.js",
+        "Utilized Tailwind CSS for styling and responsive design to ensure compatibility across devices.",
         "Designed and developed a responsive portfolio website that can be accessed from any device.",
         "Implemented light and dark mode for better user experience and accessibility.",
         "Deployed the website on Render.com for reliable hosting."
@@ -34,6 +36,8 @@ export default function Projects({ isDarkMode }) {
       image: "/images/ev-charging-app.png",
       technologies: ["React", "Tailwind CSS", "React Native", "Node.js", "MongoDB", "Google Maps API", "Git", "GitHub", "JIRA"],
       keyPoints: [
+        "The EV Charging and Booking System allows users to see the available charging stations near their live location and book a slot based on availability.",
+        "Users can select their preferred timeslot in any station for charging and book them.",
         "Used JWT authentication and role-based access control (RBAC) to secure user data and admin functionalities.",
         "Created a mobile app using React Native and the backend using Node.js with a MongoDB database."
       ],
@@ -49,11 +53,10 @@ export default function Projects({ isDarkMode }) {
       category: "devops",
       description: "DevOps pipeline implementation for a To Do List web application.",
       image: "/images/todo-list-app.png",
-      technologies: ["GitHub Actions", "YAML", "Docker", "Docker Hub", "Git", "GitHub", "Node.js", "Express.js", "React.js", "AWS EC2", "Docker Compose"],
+      technologies: ["GitHub Actions", "Jenkins", "Docker", "Docker Hub", "Git", "Terraform", "Node.js", "Express.js", "React.js", "AWS EC2"],
       keyPoints: [
-        "Built a CI/CD pipeline using GitHub Actions to automate the process of building Docker images for frontend and backend services.",
-        "Designed and implemented another CI/CD pipeline using GitHub Actions to automate the deployment of Dockerized applications to AWS EC2.",
-        "Configured Docker Hub integration to pull and run the latest images on EC2 instances using Docker Compose."
+        "Built a CI/CD pipeline using Jenkins to automate the process of building Docker images for frontend and backend services.",
+        "Designed and implemented creating the server instance using Terraform to create the automation of creating AWS EC2"
       ],
       links: {
         github: "https://github.com/chavee716/devops",
@@ -70,8 +73,8 @@ export default function Projects({ isDarkMode }) {
       technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT Authentication", "Git", "GitHub", "JIRA", "GitHub Actions"],
       keyPoints: [
         "This system allows users to perform CRUD operations for managing hotel bookings, rooms, and user details.",
-        "Designed a role-based access control (RBAC) system to ensure secure user authentication and authorization.",
-        "Implemented a CI/CD pipeline using GitHub Actions to build docker images."
+        "Designed a role-based access control (RBAC) system to ensure secure user authentication and authorization."
+        
       ],
       links: {
         github: "https://github.com/chavee716/Hotel_Booking_Application",
@@ -89,8 +92,7 @@ export default function Projects({ isDarkMode }) {
       keyPoints: [
         "Used a Decision Tree algorithm, achieving 99.63% accuracy and 99.49% precision on the dataset.",
         "Performed data preprocessing and feature engineering using Pandas to handle categorical variables.",
-        "Trained and evaluated the model using Scikit-learn and fine-tuned hyperparameters for optimal performance.",
-        "Implemented and tested the model in Google Colab, leveraging cloud-based computing resources."
+        "Trained and evaluated the model using Scikit-learn and fine-tuned hyperparameters for optimal performance."
       ],
       links: {
         github: "https://github.com/chavee716/Mushroom_Classification",
