@@ -48,7 +48,7 @@ export default function Projects({ isDarkMode }) {
     },
     {
       title: "To Do List Tracker",
-      period: "2025 Jan - 2025 Feb",
+      period: "2024 Dec - 2025 Feb",
       type: "DevOps/Web Application",
       category: "devops",
       description: "DevOps pipeline implementation for a To Do List web application.",
