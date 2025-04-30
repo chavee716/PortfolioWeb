@@ -16,9 +16,8 @@ export default function Projects({ isDarkMode }) {
       image: "/images/portfolio-website.png",
       technologies: ["Next.js", "React", "Tailwind CSS", "JavaScript", "Responsive Design", "Git", "GitHub", "Render.com"],
       keyPoints: [
-        "A personal portfolio website of myself built with Next.js",
+        "Integrated a backend email service enabling direct visitor communication to me",
         "Utilized Tailwind CSS for styling and responsive design to ensure compatibility across devices.",
-        "Designed and developed a responsive portfolio website that can be accessed from any device.",
         "Implemented light and dark mode for better user experience and accessibility.",
         "Deployed the website on Render.com for reliable hosting."
       ],
@@ -30,7 +29,7 @@ export default function Projects({ isDarkMode }) {
     {
       title: "EV Charging Booking System",
       period: "2024 - PRESENT",
-      type: "Software Project",
+      type: "Software Project - Web application + Mobile application according to client requirements",
       category: "mobile",
       description: "The EV Charging and Booking System allows users to see the available charging stations near their live location and book a slot based on availability.",
       image: "/images/ev-charging-app.png",
@@ -49,7 +48,7 @@ export default function Projects({ isDarkMode }) {
     {
       title: "To Do List Tracker",
       period: "2024 Dec - 2025 Feb",
-      type: "DevOps/Web Application",
+      type: "DevOps + Web Application",
       category: "devops",
       description: "DevOps pipeline implementation for a To Do List web application.",
       image: "/images/todo-list-app.png",
@@ -72,7 +71,8 @@ export default function Projects({ isDarkMode }) {
       image: "/images/hotel-booking-system.png",
       technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT Authentication", "Git", "GitHub", "JIRA", "GitHub Actions"],
       keyPoints: [
-        "This system allows users to perform CRUD operations for managing hotel bookings, rooms, and user details.",
+        "Used pagination and lazy loading to reduce the delay when the web application is loading",
+        "Added advanced search functionality with filtering and indexing capabilities to enhance user experience",
         "Designed a role-based access control (RBAC) system to ensure secure user authentication and authorization."
         
       ],
@@ -109,6 +109,7 @@ export default function Projects({ isDarkMode }) {
       technologies: ["MySQL", "Visual Paradigm"],
       keyPoints: [
         "Created a 2NF schema to ensure consistent, non-redundant data.",
+        "Reduced the time up to 2-3 seconds for Database Queries on average through indexing",
         "Used advanced SQL operations, including joins, unions, nested queries, and aggregates for efficient data management.",
         "Executed full outer joins, Cartesian products, and nested queries to retrieve required information."
       ],
