@@ -67,7 +67,7 @@ export default function Projects({ isDarkMode }) {
       period: "2024 Jan - 2024 March",
       type: "Web Application",
       category: "web",
-      description: "Developed a web application using the MERN stack to manage hotel bookings, rooms, and user details.",
+      description: "Allows users to book hotels and add their hotels to the app and manage them",
       image: "/images/hotel-booking-system.png",
       technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT Authentication", "Git", "GitHub", "JIRA", "GitHub Actions"],
       keyPoints: [
