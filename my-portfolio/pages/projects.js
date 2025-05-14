@@ -100,12 +100,12 @@ export default function Projects({ isDarkMode }) {
       }
     },
     {
-      title: "Face Mask Detection System",
-      period: "2024 Jan - 2024 March",
+      title: "Real-Time Face Mask Detection System",
+      period: "2024 Dec - 2025 May",
       type: "Artificial Intelligence",
       category: "ml",
       description: "Implemented a real-time face mask detection system using OpenCV, TensorFlow, and deep learning.",
-      image: "/images/face-mask-detection.png",
+      image: "/images/face-mask-detection.jpg",
       technologies: ["Python", "TensorFlow", "OpenCV", "Seaborn", "NumPy"],
       keyPoints: [
         "Used a pre-trained DNN model (Caffemodel) to detect faces in the live video feed",
@@ -144,7 +144,7 @@ export default function Projects({ isDarkMode }) {
       type: ".NET Application",
       category: "web",
       description: "Allows the respective authorities of the hospital to do CRUD operations on patients' records, doctors' information and their records.",
-      image: "/images/hospital-management.png",
+      image: "/images/hospital-management.jpeg",
       technologies: [".NET", "C#", "SQL", "WFA"],
       keyPoints: [
         "Implemented CRUD operations for managing patient records and doctor information",
