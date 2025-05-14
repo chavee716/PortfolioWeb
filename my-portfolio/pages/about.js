@@ -4,8 +4,8 @@ import Head from 'next/head';
 export default function About({ isDarkMode }) {
   const skills = {
     programming: ["Python", "Java", "C++", "JavaScript", "TypeScript", "C#"],
-    webDevelopment: ["HTML", "CSS", "React", "NextJs", "NodeJs", "ExpressJs", "Tailwind CSS", "React Native"],
-    devOps: ["Docker", "AWS", "Linux", "CI/CD"],
+    webDevelopment: ["HTML", "CSS", "React", "NodeJs", "ExpressJs", "Tailwind CSS", "React Native"],
+    devOps: ["Docker", "AWS", "CI/CD"],
     versionControl: ["Git", "GitHub"],
     databases: ["MySQL", "MongoDB"],
     tools: ["Figma", "Visual Studio", "IntelliJ IDEA", "Postman", "Jupyter", "Jira"],
@@ -16,8 +16,7 @@ export default function About({ isDarkMode }) {
     {
       degree: "BSc Hons. Computer Engineering (UG)",
       institution: "Faculty of Engineering, University of Ruhuna",
-      period: "2022 - present",
-      details: "Current GPA: 3.49 / 4.0"
+      period: "2021 - present",
     },
     {
       degree: "G.C.E. Advanced Level in Physical Science",
@@ -28,6 +27,7 @@ export default function About({ isDarkMode }) {
   ];
 
   const certifications = [
+    "Web Designing - Computer Science Engineering Department, University of Moratuwa",
     "Docker For Beginners - KodeKloud",
     "Supervised Machine Learning - Stanford University - Coursera",
     "Unsupervised Machine Learning - Stanford University - Coursera",

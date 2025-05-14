@@ -100,6 +100,26 @@ export default function Projects({ isDarkMode }) {
       }
     },
     {
+      title: "Face Mask Detection System",
+      period: "2024 Jan - 2024 March",
+      type: "Artificial Intelligence",
+      category: "ml",
+      description: "Implemented a real-time face mask detection system using OpenCV, TensorFlow, and deep learning.",
+      image: "/images/face-mask-detection.png",
+      technologies: ["Python", "TensorFlow", "OpenCV", "Seaborn", "NumPy"],
+      keyPoints: [
+        "Used a pre-trained DNN model (Caffemodel) to detect faces in the live video feed",
+        "Detected faces are sent through a Convolutional Neural Network to check if a person is wearing a mask or not",
+        "Developed an email notification system that automatically sends alerts with captured images when violations are detected",
+        "Added a Cooldown timer to avoid sending unnecessary emails",
+        "Integrated face detection with mask classification for live webcam feed analysis with optimized FPS performance"
+      ],
+      links: {
+        github: null,
+        demo: null
+      }
+    },
+    {
       title: "Car Rental System",
       period: "2024 Jan - 2024 March",
       type: "MySQL Application",
@@ -115,6 +135,25 @@ export default function Projects({ isDarkMode }) {
       ],
       links: {
         github: "#",
+        demo: null
+      }
+    },
+    {
+      title: "Hospital Management System",
+      period: "2024 Jan - 2024 March",
+      type: ".NET Application",
+      category: "web",
+      description: "Allows the respective authorities of the hospital to do CRUD operations on patients' records, doctors' information and their records.",
+      image: "/images/hospital-management.png",
+      technologies: [".NET", "C#", "SQL", "WFA"],
+      keyPoints: [
+        "Implemented CRUD operations for managing patient records and doctor information",
+        "Used SQL database for efficient data storage and retrieval of user and doctor information",
+        "Developed a Windows Forms Application (WFA) for an intuitive user interface",
+        "Created a secure and efficient system for hospital authorities to manage medical records"
+      ],
+      links: {
+        github: null,
         demo: null
       }
     }
