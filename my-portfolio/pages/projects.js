@@ -8,6 +8,45 @@ export default function Projects({ isDarkMode }) {
   
   const projects = [
     {
+      title: "Movie Management System",
+      period: "2024 March - 2024 May",
+      type: "Web Application",
+      category: "web",
+      description: "A comprehensive movie management system built with ASP.NET Core MVC, featuring user authentication, role-based access control, and complete CRUD operations.",
+      image: "/images/movie-management.png",
+      technologies: ["C#", "ASP.NET Core MVC", "Entity Framework Core", "SQL Server", "Bootstrap", "HTML5", "CSS3", "JavaScript", "Git", "Visual Studio"],
+      keyPoints: [
+        "Developed a complete ASP.NET Core MVC application with secure user management and role-based access control",
+        "Implemented full CRUD operations for movie management using Entity Framework Core",
+        "Created responsive and dynamic user interface using Bootstrap with smooth animations",
+        "Utilized SQL Server for efficient database management and operations",
+        "Implemented secure authentication and authorization system"
+      ],
+      links: {
+        github: "https://github.com/chavee716/Movie_Explorer-ASP.NET_Web_App",
+        demo: null
+      }
+    },
+    {
+      title: "Smart Trolley System",
+      period: "2024 March - 2024 May",
+      type: "Embedded Systems",
+      category: "embedded_systems",
+      description: "An IoT-based smart trolley system that revolutionizes supermarket shopping using RFID technology, weight sensors, and real-time inventory tracking.",
+      image: "/images/smart-trolley.png",
+      technologies: ["RFID", "IoT", "Raspberry Pi", "Node.js", "Next.js", "MongoDB", "MQTT", "WebSocket", "Express.js"],
+      keyPoints: [
+        "Developed an automated product scanning system using RFID technology for instant product detection",
+        "Implemented real-time weight verification system using load cell sensors for security",
+        "Created an energy-efficient system with wireless features for inventory tracking",
+        "Built a user-friendly interface with real-time error handling and automatic billing"
+      ],  
+      links: {
+        github: "https://github.com/chavee716/Smart_Trolley_System",
+        demo: null
+      }
+    },
+    {
       title: "My Portfolio Website",
       period: "2025 Feb - 2025 March",
       type: "Web Development",
@@ -115,7 +154,7 @@ export default function Projects({ isDarkMode }) {
         "Integrated face detection with mask classification for live webcam feed analysis with optimized FPS performance"
       ],
       links: {
-        github: null,
+        github: "https://github.com/chavee716/Face-Mask-Detection-System",
         demo: null
       }
     },
@@ -165,6 +204,7 @@ export default function Projects({ isDarkMode }) {
 
   const filters = [
     { id: 'all', label: 'Projects' },
+    { id: 'embedded_systems', label: 'Embedded Systems' },
     { id: 'web', label: 'Web' },
     { id: 'mobile', label: 'Mobile' },
     { id: 'devops', label: 'DevOps' },
