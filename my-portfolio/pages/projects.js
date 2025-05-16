@@ -33,7 +33,7 @@ export default function Projects({ isDarkMode }) {
       type: "Embedded Systems",
       category: "embedded_systems",
       description: "An IoT-based smart trolley system that revolutionizes supermarket shopping using RFID technology, weight sensors, and real-time inventory tracking.",
-      image: "/images/smart-trolley.png",
+      image: "/images/smart-trolley.jpg",
       technologies: ["RFID", "IoT", "Raspberry Pi", "Node.js", "Next.js", "MongoDB", "MQTT", "WebSocket", "Express.js"],
       keyPoints: [
         "Developed an automated product scanning system using RFID technology for instant product detection",
@@ -183,7 +183,7 @@ export default function Projects({ isDarkMode }) {
       type: ".NET Application",
       category: "web",
       description: "Allows the respective authorities of the hospital to do CRUD operations on patients' records, doctors' information and their records.",
-      image: "/images/hospital-management.jpeg",
+      image: "/images/hospital-management.jpg",
       technologies: [".NET", "C#", "SQL", "WFA"],
       keyPoints: [
         "Implemented CRUD operations for managing patient records and doctor information",
